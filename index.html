@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banpará Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #002a7f;
+      color: white;
+      font-family: "Poppins", sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 4rem;
+      position: relative;
+    }
+
+    .menu-icon {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 1.6rem;
+      cursor: pointer;
+    }
+
+    .logo img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 10px;
+    }
+
+    .login-card {
+      background: white;
+      color: #002a7f;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      width: 90%;
+      max-width: 380px;
+      padding: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .login-card label {
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    .form-control {
+      border: none;
+      border-bottom: 2px solid #002a7f;
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+    .form-control:focus {
+      border-color: #004bce;
+      box-shadow: none;
+    }
+
+    .btn-login {
+      background-color: #002a7f;
+      color: white;
+      width: 100%;
+      border-radius: 8px;
+      padding: 0.75rem;
+      font-weight: 600;
+      margin-top: 1rem;
+    }
+
+    .btn-login:hover {
+      background-color: #003bb5;
+    }
+
+    .footer-text {
+      color: #cbd5e1;
+      font-size: 0.85rem;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top right menu icon -->
+  <i class="bi bi-list menu-icon"></i>
+
+  <!-- Logo -->
+  <div class="logo text-center">
+    <img src="./Logo_do_Banpará.svg.png" alt="Banpará logo" style="border-radius: 15px;">
+    <h5>Banpará</h5>
+  </div>
+
+  <!-- Title -->
+  <div class="text-center mt-3">
+    <h6>Acessar Conta</h6>
+    
+  </div>
+
+  <!-- Login Card -->
+  <div class="login-card">
+    <form>
+      <div class="mb-3">
+        <label for="username" class="form-label">Usuário</label>
+        <input type="text" class="form-control" id="username" placeholder="Digite seu usuário">
+      </div>
+
+      <div class="mb-3">
+        <label for="password" class="form-label">Senha</label>
+        <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
+      </div>
+
+      <button onclick="handleSubmit()" type="button" class="btn btn-login" id="sub">ENTRAR</button>
+    </form>
+  </div>
+
+  <!-- <p class="footer-text text-center">© 2025 Banpará</p> -->
+
+  <script>
+    function handleSubmit() {
+        const sub = document.getElementById("sub");
+        console.log("running");
+        
+        sub.innerText = "Carregando...";
+        sub.style.color = "white";
+        
+        setTimeout(() => {
+           window.location.href = "./home.html"
+        }, 3000);
+    }
+  </script>
+</body>
+</html>
