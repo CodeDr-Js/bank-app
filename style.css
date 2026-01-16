@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+:root {
+  --green: #2e7d32;
+  --gray: #8b8f94;
+  --dark: #1c1c1e;
+  --bg: #f2f3f4;
+}
+
+body {
+  background: var(--bg);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.page {
+  width: 100%;
+  max-width: 420px;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 8px;
+}
+
+.title {
+  flex: 1;
+  font-size: 19px;
+  font-weight: 480;
+}
+
+.back {
+  width: 22px;
+  height: 22px;
+  fill: var(--green);
+}
+
+.pdf {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: var(--green);
+  stroke-width: 2;
+}
+
+.pdf text {
+  fill: var(--green);
+  font-size: 7px;
+  font-weight: 700;
+  stroke: none;
+}
+
+/* AMOUNT */
+.amount {
+  text-align: center;
+  padding: 20px 0 14px;
+}
+
+.value {
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.value span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.date {
+  margin-top: 6px;
+  font-size: 14px;
+  color: var(--gray);
+}
+
+.name {
+  margin-top: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--green);
+}
+
+/* CARD */
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+/* ROWS */
+.row {
+  margin-bottom: 22px;
+}
+
+.label {
+  font-size: 14px;
+  color: var(--gray);
+  margin-bottom: 6px;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--dark);
+}
+
+/* MORE INFO */
+.more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  padding-top: 4px;
+}
+
+.arrow {
+  color: var(--gray);
+  font-size: 18px;
+}
