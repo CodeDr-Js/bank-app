@@ -144,8 +144,8 @@
       <button class="eye-btn" id="toggleEye"><i class="bi bi-eye"></i></button>
     </div>
     <p class="subtext mb-1">Total</p>
-    <p class="amount" id="balanceValue">€ 1.208,20</p>
-    <p class="subtext">Solde retirable<br><b>€ 1.208,20</b></p>
+    <p class="amount" id="balanceValue">€ 2.208,20</p>
+    <p class="subtext">Solde retirable<br><b>€ 2.208,20</b></p>
     <div style="height: 220px;"></div>
   </div>
 
@@ -177,7 +177,7 @@
 
     toggleEye.addEventListener("click", () => {
       hidden = !hidden;
-      balanceValue.textContent = hidden ? "€ ******" : "€ 1.208,20";
+      balanceValue.textContent = hidden ? "€ ******" : "€ 2.208,20";
       toggleEye.innerHTML = hidden
         ? '<i class="bi bi-eye-slash"></i>'
         : '<i class="bi bi-eye"></i>';
